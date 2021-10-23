@@ -6,7 +6,17 @@ public class Zadanie1 {
         Scanner strUser = new Scanner(System.in);
         double srednica = strUser.nextDouble();
 
-        System.out.println("Obwód okręgu obliczony z przyjętą warością PI = 3.14 wynosi: " + srednica*3.14);
-        System.out.println("Obwód okręgu obliczony za pomocą wbudowanej funkcji Math wynosi: "+ srednica*Math.PI);
+        System.out.println("Obwód okręgu obliczony z przyjętą warością PI = 3.14 wynosi: " + manualneObliczenie(srednica));
+        System.out.println("Obwód okręgu obliczony za pomocą wbudowanej funkcji Math wynosi: "+ wykorzystanieMath(srednica));
+    }
+
+    static double manualneObliczenie(double in)
+    {
+        return in * 3.14;
+    }
+
+    static double wykorzystanieMath(double in)
+    {
+        return in * Math.PI;
     }
 }
