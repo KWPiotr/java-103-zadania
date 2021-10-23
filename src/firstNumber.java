@@ -11,16 +11,14 @@ public class firstNumber {
             if (isFirstNumber(i)) {
                 System.out.println(i);
             } else {
-               // System.out.println("Liczba nie jest pierwszą" + i);
+                // System.out.println("Liczba nie jest pierwszą" + i);
             }
         }
-
     }
 
-    static boolean isFirstNumber(int inNumber)
-    {
+    static boolean isFirstNumber(int inNumber) {
         for (int i = 2; i < inNumber; i++) {
-            if(inNumber % i == 0) {
+            if (inNumber % i == 0) {
                 return false;
             }
         }
