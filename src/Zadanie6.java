@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Zadanie6 {
     public static void main(String[] args) {
 
-        System.out.print("Podaj linczbę N: ");
+        System.out.print("Podaj linczbę N dla szeregu: ");
         Scanner strUser = new Scanner(System.in);
         int userNumber = strUser.nextInt();
         double harmonySum = 1;
