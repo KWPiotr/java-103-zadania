@@ -15,8 +15,9 @@ public class Zadanie15 {
                 System.out.println(tmp);
             }
         }
-
+        strUser.close();
     }
+
     static int szukaj(int[] inArray, int inputNumber) {
         int counter = 0;
         for (int i = 0; i < inArray.length; i++) {
