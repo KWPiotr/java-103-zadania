@@ -15,12 +15,12 @@ public class MyBinnaryChanger {
 
     public void changesNumberOnBinnary(long inMyNumber) {
         String result = "";
-        while(inMyNumber > 0) {
-            if(inMyNumber%2 == 0) {
-                inMyNumber = inMyNumber/2;
+        while (inMyNumber > 0) {
+            if (inMyNumber % 2 == 0) {
+                inMyNumber = inMyNumber / 2;
                 result += "0";
             } else {
-                inMyNumber = inMyNumber/2;
+                inMyNumber = inMyNumber / 2;
                 result += "1";
             }
         }
@@ -30,12 +30,12 @@ public class MyBinnaryChanger {
 
     public void changesNumberOnDec(long inMyNumber) {
         long tmp, sum = 0;
-        int i=0;
-        while(inMyNumber != 0) {
+        int i = 0;
+        while (inMyNumber != 0) {
             tmp = inMyNumber % 10;
             inMyNumber = inMyNumber / 10;
-          //  System.out.println("TMP: " + tmp);
-          //  System.out.println("inMyNumber" + inMyNumber);
+            //  System.out.println("TMP: " + tmp);
+            //  System.out.println("inMyNumber" + inMyNumber);
             sum += tmp * (Math.pow(2, i));
             ++i;
         }
@@ -43,7 +43,7 @@ public class MyBinnaryChanger {
     }
 
     public String toString() {
-       return String.format("Liczba po dokonaniu konwersji: %d", myNumber);
+        return String.format("Liczba po dokonaniu konwersji: %d", myNumber);
     }
 
 }
